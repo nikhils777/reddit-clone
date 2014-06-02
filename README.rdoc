@@ -10,6 +10,7 @@ Things you may want to cover:
 * System dependencies
 
 * Configuration
+# added a config/application.yml file to store environment variables for sensitive data
 
 * Database creation
 

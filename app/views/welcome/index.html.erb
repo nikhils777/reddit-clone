@@ -1,3 +1,25 @@
-<h1>Welcome to Bloccit</h1>
-<p>You are at the homepage for Bloccit</p>
+<br/>
+<div class="jumbotron">
+  <h1>Bloccit</h1>
+  <p> Bloccit is a resource forsharing links with your friends!</p>
+  <p>
+    <%= link_to "Sign In", new_user_session_path, class: 'btn btn-primary' %> or
+    <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-primary' %> today!
+  </p>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <h2> Users </h2>
+    <p> Bloccit has over 5 million users.</p>
+  </div>
+  <div class="col-md-4">
+    <h2> Likes </h2>
+    <p> You know that everyone likes Bloccit.</p>
+  </div>
+  <div class="col-md-4">
+    <h2> Friends </h2>
+    <p> Sign up for Bloccit because all your friends already did.</p>
+  </div>
+</div>
+
 
