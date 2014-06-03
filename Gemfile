@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 gem 'newrelic_rpm'
 gem 'figaro'
+gem 'pundit'
 # Use sqlite3 as the database for Active Record
 group :production do
   gem 'pg'
