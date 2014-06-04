@@ -5,6 +5,7 @@ gem 'rails', '4.0.2'
 gem 'newrelic_rpm'
 gem 'figaro'
 gem 'pundit'
+gem 'redcarpet'
 # Use sqlite3 as the database for Active Record
 group :production do
   gem 'pg'
