@@ -13,6 +13,7 @@
         </h4>
         <small>
           <%= image_tag(post.user.avatar.tiny.url) if post.user.avatar? %>
+          <%= image_tag(post.postpic.thumb.url) if post.postpic? %>
           submitted <%= time_ago_in_words(post.created_at) %> ago by
           <%= post.user.name %><br/>
           <%= post.comments.count %> Comments
@@ -22,7 +23,7 @@
     <% end %>
   </div>
   <div class="col-md-4">
-    <% if policy(POst.new).create? %>
+    <% if policy(Post.new).create? %>
     <%= link_to "New Post", new_topic_post_path(@topic), class: 'btn btn-success' %>
     <% end %>
   </div>
