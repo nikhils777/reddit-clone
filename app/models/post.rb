@@ -2,7 +2,7 @@ class Post < ActiveRecord::Base
   has_many :comments
   belongs_to :user
   belongs_to :topic
-  mount_uploader :postpic PostpicUploader
+  mount_uploader :postpic, PostpicUploader
 
   default_scope { order('created_at DESC')}
   validates :title, length: { minimum: 5}, presence: true

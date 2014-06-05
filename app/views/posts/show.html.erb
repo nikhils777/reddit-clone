@@ -8,7 +8,7 @@
     </small>
     <p>
       <%= markdown @post.body %>
-      <%= image_tag(post.postpic.thumb.url) if post.postpic? %>
+      <%= image_tag(@post.postpic.thumb.url) if @post.postpic? %>
     </p>
   </div>
   <div class="col-md-4">
