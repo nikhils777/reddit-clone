@@ -9,6 +9,7 @@ gem 'redcarpet'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog'
+gem 'will_paginate', '~> 3.0.5'
 # Use sqlite3 as the database for Active Record
 group :production do
   gem 'pg'
