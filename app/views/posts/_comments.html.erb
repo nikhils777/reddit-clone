@@ -1,0 +1,14 @@
+<% extend ActiveModel::Naming %>
+<% extend ActiveModel::Conversion %>
+<%= form_for [topic, post] do %>
+<% @comments.each do |f| %>
+    <div class="media">
+        <div class="media-body">
+          <h4 class="media-heading">
+            <%= link_to "comment", [topic, post, f] %>
+            <%= f.body %>
+          </h4>
+        </div>
+      </div>
+    <% end %>
+<% end %>

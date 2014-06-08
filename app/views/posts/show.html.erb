@@ -10,10 +10,12 @@
       <%= markdown @post.body %>
       <%= image_tag(@post.postpic.thumb.url) if @post.postpic? %>
     </p>
+    <%= render partial: 'comments', locals: { topic: @topic, post: @post } %>
   </div>
   <div class="col-md-4">
 <% if policy(@post).edit? %>
 <%= link_to "Edit", edit_topic_post_path(@topic,@post), class: 'btn btn-success' %>
 <% end %>
+<%= link_to "New Comment", new_topic_post_comment_path(@topic,@post,@comment), class: 'btn btn-success' %>
 </div>
 </div>
