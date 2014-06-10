@@ -3,7 +3,7 @@
 <%= form_for [topic, post] do %>
 <% @comments.each do |f| %>
     <div class="media">
-      <%= content_tag :div, class: 'media', id: "comment-#{comment.id}" do %>
+      <%= content_tag :div, class: 'media', id: "comment-#{f.id}" do %>
       <%= link_to '#', class: 'pull-left' do %>
       <% end %>
         <div class="media-body">
