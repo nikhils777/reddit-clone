@@ -1,5 +1,4 @@
 <%= form_for [topic, post, comment] do |f| %>
-<%= f.label :body %>
 <%= f.text_area :body, rows: 8, class: 'form-control', placeholder: "Enter comment" %>
-<%= f.submit "Save", class: 'btn btn-success' %>
+<%= f.submit "Comment", class: 'btn btn-success' %>
 <% end %>
