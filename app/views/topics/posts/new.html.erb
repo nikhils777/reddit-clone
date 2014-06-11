@@ -1,0 +1,14 @@
+<h1>New Post</h1>
+<div class="row">
+  <div class="col-md-4">
+    <p> Please follow these guidelines</p>
+    <ul>
+      <li> It has to rhyme, a little atleast.</li>
+      <li> All of the rhymes must make sense.</li>
+      <li> Do not use hashtags relentlessly.</li>
+    </ul>
+  </div>
+  <div class="col-md-8">
+    <%= render partial: 'form', locals: { topic: @topic, post: @post } %>
+</div>
+</div>
