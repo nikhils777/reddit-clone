@@ -27,7 +27,7 @@ class CommentsController < ApplicationController
       redirect_to [@topic, @post], notice: "Comment saved"
     else
       flash[:error] = "An error occured, please try again."
-      render :new
+      render "topics/posts/show"
     end
   end
   def destroy
