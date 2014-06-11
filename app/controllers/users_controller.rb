@@ -8,6 +8,11 @@ class UsersController < ApplicationController
       render "devise/registrations/edit"
     end
   end
+  def show
+    @user = User.find(params[:id])
+    @posts = @user.posts
+    @comments = @user.comments
+  end
 
   private
 
