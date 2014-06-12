@@ -12,6 +12,7 @@
       <%= markdown @post.body %>
       <%= image_tag(@post.postpic.thumb.url) if @post.postpic? %>
     </p>
+    <h2 class='js-comments-count'><%= @comments.count %> Comments</h2>
     <%= render partial: 'comments/form', locals: { topic: @topic, post: @post, comment: @comment } %>
     <%= render partial: 'comments/comment', collection: @post.comments %>
   </div>
